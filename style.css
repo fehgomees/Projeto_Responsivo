@@ -1,0 +1,71 @@
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: blue;
+    position: relative;  
+}
+
+h1 {
+    font-weight: 800;
+    text-align: center;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: rgb(115, 222, 255);
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    flex: 0 0 calc(33.33% - 20px); 
+    text-align: center;
+    margin-bottom: 30px;
+    height: 250px;
+    position: relative;
+    width: fit-content;    
+}
+
+.card p{
+    position: absolute;
+    width: 80.1%;
+    padding: 10px;
+    text-align: center;
+    margin: 42px;
+    margin-top: -4px;
+    color: rgb(8, 44, 42);
+    background-color: rgb(0, 255, 221);
+    padding-top: 5px;
+    box-sizing: border-box;  
+}
+
+.tamanho {
+    width: 80%;
+    height: 95%; 
+}
+
+.footer {
+    text-align: center;
+    color: #fbfdfd; 
+}
+
+.footer-caixa {
+    background-color: #080cf8;
+    padding: 3px;
+}
+
+/* Responsividade */
+@media only screen and (max-width: 768px) {
+    .card {
+        flex-basis: calc(50% - 20px); 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .card {
+        flex-basis: calc(100% - 20px); 
+    }
+}
