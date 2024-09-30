@@ -17,27 +17,27 @@ h1 {
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centraliza as cartas */
-    gap: 20px; /* Espaçamento entre as cartas */
+    justify-content: center; 
+    gap: 20px;
 }
 
 .card {
-    flex: 0 1 calc(33.33% - 20px); /* Ajusta para caber 3 cartas por linha */
+    flex: 0 1 calc(33.33% - 20px); 
     text-align: center;
     margin-bottom: 30px;
-    height: 250px; /* Mantenha a altura para consistência */
+    height: 250px; 
     position: relative;
-    background-color: #fff; /* Adiciona uma cor de fundo para as cartas */
-    border-radius: 5px; /* Bordas arredondadas */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para destaque */
+    background-color: #fff; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .card p {
-    position: relative; /* Muda de absolute para relative */
-    width: 90%; /* Ajusta a largura do texto */
+    position: relative; 
+    width: 90%; 
     padding: 10px;
     text-align: center;
-    margin: auto; /* Centraliza o texto */
+    margin: auto; 
     color: rgb(8, 44, 42);
     background-color: rgb(0, 255, 221);
     padding-top: 5px;
@@ -62,25 +62,25 @@ h1 {
 /* Responsividade */
 @media only screen and (max-width: 768px) {
     h1 {
-        font-size: 1.5em; /* Diminui o tamanho do texto */
-        padding: 10px; /* Aumenta o espaçamento interno */
-        text-align: center; /* Centraliza o cabeçalho */
+        font-size: 1.5em; 
+        padding: 10px; 
+        text-align: center; 
     }
 
     .card {
-        flex: 0 1 calc(90% - 20px); /* Ajusta para caber melhor em telas menores */
-        margin: 0 auto; /* Centraliza as cartas */
-        height: auto; /* Permite que a altura se ajuste ao conteúdo */
+        flex: 0 1 calc(90% - 20px); 
+        margin: 0 auto; 
+        height: auto; 
     }
 }
 
 @media only screen and (max-width: 480px) {
     h1 {
-        font-size: 1.2em; /* Reduz o tamanho da fonte ainda mais */
+        font-size: 1.2em; 
     }
 
     .card p {
-        font-size: 0.9em; /* Ajusta o tamanho do texto das cartas */
+        font-size: 0.9em; 
     }
 }
 
